@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+# -*- coding:utf-8 -*-
+# Copyright (c) Megvii, Inc. and its affiliates.
+
 from yolox.exp import Exp as MyExp
 import os
 
@@ -10,7 +14,7 @@ class Exp(MyExp):
         self.exp_name = os.path.split(os.path.realpath(__file__))[1].split(".")[0]
 
         # 数据路径
-        self.data_dir = "tinyperson/tiny_set/erase_with_uncertain_dataset"
+        self.data_dir = "/kaggle/input/tinyPerson/tiny_set_new"
         self.train_ann = "annotations/tinyperson_train_yolox.json"  # 如果微调
         self.val_ann = "annotations/tinyperson_test_yolox.json"     # 测试用
         self.test_ann = "annotations/tinyperson_test_yolox.json"
