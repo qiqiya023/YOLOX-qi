@@ -14,7 +14,7 @@ class Exp(MyExp):
         self.exp_name = os.path.split(os.path.realpath(__file__))[1].split(".")[0]
 
         # 数据路径
-        self.data_dir = "/kaggle/input/tinyPerson/tiny_set_new"
+        self.data_dir = "/kaggle/input/tinyperson/tiny_set_new"
         self.train_ann = "annotations/tinyperson_train_yolox.json"  # 如果微调
         self.val_ann = "annotations/tinyperson_test_yolox.json"     # 测试用
         self.test_ann = "annotations/tinyperson_test_yolox.json"
